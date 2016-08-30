@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Minimal
-email: blog@minimal.com
+title: Karoline Alencar
+email: karolinedalencar@gmail.com
 description: "Esse é um blog minimalista criado para aprender como funciona essa
 ferramente linda que é o Jekyll."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://karolinealencar.github.io" # the base hostname & protocol for your site
-twitter_username: minimal_twitter
-github_username:  minimal_github
+url: "http://karolinedealencar.github.io" # the base hostname & protocol for your site
+twitter_username: karoldalencar
+github_username:  KarolinedeAlencar
 
 # Build settings
 markdown: kramdown

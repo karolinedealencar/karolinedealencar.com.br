@@ -124,7 +124,6 @@
 .post {
   flex: 1 25%;
   margin: 5px;
-  padding: 20px;
   text-align: center;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
@@ -145,7 +144,8 @@
 }
 
 .post__link {
-  padding: 15px;
+  display: block;
+  padding: 25px;
 }
 
 .post__date {

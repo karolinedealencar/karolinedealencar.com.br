@@ -2,19 +2,39 @@
 layout: default
 ---
 
-<div class="content list">
-  {% if site.posts.size == 0 %}
-    <h2>No post found</h2>
-  {% else %}
-    {% for post in site.posts %}
-      <div class="list-item">
-        <h2 class="list-post-title">
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h2>
-        <div class="list-post-date">
-          <time>{{ post.date | date_to_string }}</time>
-        </div>
-      </div>
-    {% endfor %}
-  {% endif %}
+    <div class="container">
+      <section class="about">
+        <img src="img/retrato.jpg" alt="Foto da autora do blog" class="about__img">
+        <h2 class="about__h">Olá! =)</h2>
+        <p class="about__p">
+          Meu nome é Karoline,
+          descobri recentemente minha
+          paixão por interfaces e desde
+          então busco novos desafios
+          diariamente.
+        </p>
+      </section><!--    ABOUT    -->
+    </div>
+  </div>
+</div>
+<div class="container">
+  <section class="post__list">
+      <h2 class="post__h">Artigos</h2>
+      <div class="post__container">
+      {% if site.posts.size == 0 %}
+        <h3>I'm sorry, the post is in another castle. =(</h3>
+      {% else %}
+        {% for post in site.posts %}
+        <article class="post">
+          <h3 class="post__title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <div class="post__date">
+            <time>{{ site.time | date_to_long_string }}</time>
+          </div>
+        </article>
+      {% endfor %}
+    {% endif %}
+    </div>
+  </section>
 </div>

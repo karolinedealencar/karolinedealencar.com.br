@@ -1,12 +1,33 @@
-<header class="masthead">
-  <h1 class="masthead-title">
-    <a href="{{ site.baseurl }}/">{{ site.title }}<span>&#39;s blog</span></a>
-  </h1>
-  <nav class="masthead-nav">
-    {% for page in site.pages %}
-      {% if  page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
-</header>
+<div class="main__bg">
+  <div class="bg">
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">
+          <a href="{{ site.baseurl }}/" class="header__title">{{ site.title }}</a>
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="https://github.com/KarolinedeAlencar" class="header__link" target="_blank">
+                <img src="img/github.svg" alt="Ícone do Github em branco" class="header__icon">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="https://codepen.io/KarolinedeAlencar/" class="header__link" target="_blank">
+                <img src="img/codepen.svg" alt="Ícone do CodePen em branco" class="header__icon">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="www.linkedin.com/in/karolinedealencar" class="header__link" target="_blank">
+                <img src="img/linkedin.svg" alt="Ícone do Linkedin em branco" class="header__icon">
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="https://twitter.com/karoldalencar" class="header__link"  target="_blank">
+                <img src="img/twitter.svg" alt="Ícone do Twitter em branco" class="header__icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+  </div>

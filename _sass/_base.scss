@@ -19,6 +19,11 @@ a {
   font-weight: 600;
   color: #623C63;
   cursor: pointer;
+  transition: 1s;
+}
+
+a:hover {
+  color: #8D4B5E;
 }
 
 h2 {

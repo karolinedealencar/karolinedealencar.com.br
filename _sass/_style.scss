@@ -1,9 +1,6 @@
 .main__bg {
   width: 100%;
-  background: linear-gradient(to right bottom, #4C3366,#9C515C);
-}
-
-.bg {
+  background: linear-gradient(to left top, #9C515C, 60%, #4C3366);
   background-attachment: fixed;
 }
 
@@ -129,6 +126,11 @@
   text-align: center;
   border: 1px solid #d3d3d3;
   border-radius: 5px;
+  transition: 1s;
+}
+
+.post:hover {
+  border-color: #8D4B5E;
 }
 
 .post__title {

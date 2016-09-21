@@ -26,12 +26,14 @@ layout: default
       {% else %}
         {% for post in site.posts %}
         <article class="post">
-          <h3 class="post__title">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </h3>
-          <div class="post__date">
-            <time>{{ site.time | date_to_long_string }}</time>
-          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}" class="post__link">
+            <h3 class="post__title">
+              {{ post.title }}
+            </h3>
+            <div class="post__date">
+              <time>{{ site.time | date_to_long_string }}</time>
+            </div>
+          </a>
         </article>
       {% endfor %}
     {% endif %}

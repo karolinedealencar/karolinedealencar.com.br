@@ -132,6 +132,7 @@
 
 .post:hover {
   border-color: #8D4B5E;
+  transform: translateY(-5px);
 }
 
 .post__title {
@@ -139,7 +140,7 @@
   font-size: 1.8em;
   color: #623C63;
   @media (min-width: 768px) {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 
@@ -149,16 +150,19 @@
 }
 
 .post__date {
-  font-size: 1em;
-  font-weight: normal;
   color: #3E4042;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /*    POST PAGE   */
 
 .post__page {
   margin: 100px 0;
+}
 
+.post__date--mod {
+  margin-bottom: 100px;
 }
 
 /*    COMMENTS   */

@@ -8,8 +8,7 @@
 # Site settings
 title: Karoline Alencar
 email: karolinedalencar@gmail.com
-description: "Esse é um blog minimalista criado para aprender como funciona essa
-ferramente linda que é o Jekyll."
+description: "Blog sobre desenvolvimento web."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://karolinedealencar.github.io" # the base hostname & protocol for your site
 twitter_username: karoldalencar

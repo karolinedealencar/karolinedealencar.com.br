@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <title>Karoline Alencar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 </head>
 <style>
 
   body {
     margin: 0;
     margin-bottom: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif;
   }
 
   h1, h2, h3 {
     margin: 10px 0 18px 0;
-    font-family: 'Playfair Display', serif;
+    color: #383738;
   }
 
   h1 {
     margin-bottom: 0px;
     font-size: 3.8em;
-    color: #EBEBEC;
   }
 
   h2 {
     font-size: 1.4em;
-    color: #EBEBEC;
   }
 
   h3 {
@@ -36,13 +33,13 @@
 
   a {
     text-decoration: none;
-    color:  #000000;
+    color: #000000;
     font-size: 1.2em;
     font-weight: bold;
   }
 
   a:hover {
-    color: #728E98;
+    color: #383738;
   }
 
   p {
@@ -57,22 +54,32 @@
 
   header {
     padding: 50px 0;
-    background-color: #383738;
-    color: #728E98;
   }
 
   header a {
-    color: #EBEBEC;
     font-size: 1em;
     cursor: pointer;
   }
 
   ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
   }
 
-  @media (max-width: 525px) {
+  img {
+		max-width: 160px;
+		margin: 12px;
+		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+		filter: grayscale(100%);
+	}
 
+	img:hover {
+		-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+		filter: grayscale(0%);
+	}
+
+  @media (max-width: 525px) {
 
     h3 {
       font-size: 1.6em;
@@ -80,6 +87,7 @@
 
     ul {
       padding-left: 8px;
+      flex-direction: column;
     }
 
   }
@@ -109,53 +117,41 @@
           <h3>Experiência/Trabalhos Recentes</h3>
           <ul>
             <li>
-              <a href="http://www.voleibauru.com.br/" target="_blank">
-                Projeto Volley Bauru | Outubro/2016
+              <a href="https://karolinedealencar.github.io/" target="_blank">
+                <img src="img/projeto-blogpessoal.png" alt="">
               </a>
-              <p>
-                Projeto em produção, legado, feito em 2014. Meu trabalho foi
-                tornar todo projeto responsivo, sem frameworks e sem alterar
-                a estrutura original do projeto.
-              </p>
             </li>
             <li>
               <a href="http://www.pachiconsultant.com/" target="_blank">
-                Projeto Pachi Consultant | Setembro/2016
+                <img src="img/projeto-pachi.png" alt="">
               </a>
-              <p>
-                Projeto em wordpress, usando Sass e mixins do bootstrap para
-                não afetar a semântica, fui responsavél pelo Frontend do projeto.
-              </p>
+
             </li>
             <li>
               <a href="http://www.adenda.com.br" target="_blank">
-                Projeto Adenda | Julho/2016
+                <img src="img/projeto-adenda.png" alt="">
               </a>
-              <p>
-                Site institucional, feito em wordpress, usando bootstrap de forma semântica e Sass.
-              </p>
             </li>
           </ul>
         </section>
         <section>
           <h3>Habilidades</h3>
-          <ul>
-            <li>
-              <h4>Kanban</h4>
-            </li>
-            <li>
-              <h4>WordPress (Básico - Gerenciar conteúdo)</h4>
-            </li>
-            <li>
-              <h4>Sass</h4>
-            </li>
-            <li>
-              <h4>Bootstrap</h4>
-            </li>
-            <li>
-              <h4>Gulp</h4>
-            </li>
-          </ul>
+          <p>
+            Possuo noções de PhotoShop, o utilizando para extrair os assets do layout que recebo.
+            Também como parte do meu workflow utilizo a técnica Kanban e o WordPress como gerenciador de conteúdo.
+          </p>
+          <p>
+            O framework CSS que escolhi trabalhar é o Bootstrap, o utilizo de forma semântica com
+            mixins ao invés de poluir o HTML. Para me ajudar nessa tarefa utilizo o Sass como
+            pré-processador e o Gulp para automatizar algumas tasks.
+          </p>
+          <p>
+            Tenho uma noção de JQuery e atualmente estou estudando JavaScript puro, pois acredito
+            que antes de aprender qualquer framework ou biblioteca há a necessidade de conhecer
+            a linguagem em si e entendê-la. Outra tecnologia que gosto muito e tenho dedicado um
+            tempo de estudo é o SVG, além de ser mais leve que os outros formatos de imagens ele
+            nos possibilita efeitos incríveis.
+          </p>
         </section>
       </div>
     </main>

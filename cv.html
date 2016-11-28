@@ -63,6 +63,9 @@
 
   ul {
     list-style: none;
+  }
+
+  .recents {
     display: flex;
     justify-content: space-around;
   }
@@ -87,6 +90,9 @@
 
     ul {
       padding-left: 8px;
+    }
+
+    .recents {
       flex-direction: column;
     }
 
@@ -114,23 +120,34 @@
           </p>
         </article>
         <section>
-          <h3>Experiência/Trabalhos Recentes</h3>
+          <h3>Experiência</h3>
           <ul>
             <li>
-              <a href="https://karolinedealencar.github.io/" target="_blank">
-                <img src="img/projeto-blogpessoal.png" alt="">
+              <a href="http://www.voleibauru.com.br/" target="_blank">
+                Projeto Volley Bauru | Outubro/2016
               </a>
+              <p>
+                Projeto em produção, legado, feito em 2014. Meu trabalho foi
+                tornar todo projeto responsivo, sem frameworks e sem alterar
+                a estrutura original do projeto.
+              </p>
             </li>
             <li>
               <a href="http://www.pachiconsultant.com/" target="_blank">
-                <img src="img/projeto-pachi.png" alt="">
+                Projeto Pachi Consultant | Setembro/2016
               </a>
-
+              <p>
+                Projeto em wordpress, usando Sass e mixins do bootstrap para
+                não afetar a semântica, fui responsavél pelo Frontend do projeto.
+              </p>
             </li>
             <li>
               <a href="http://www.adenda.com.br" target="_blank">
-                <img src="img/projeto-adenda.png" alt="">
+                Projeto Adenda | Julho/2016
               </a>
+              <p>
+                Site institucional, feito em wordpress, usando bootstrap de forma semântica e Sass.
+              </p>
             </li>
           </ul>
         </section>
@@ -152,6 +169,27 @@
             tempo de estudo é o SVG, além de ser mais leve que os outros formatos de imagens ele
             nos possibilita efeitos incríveis.
           </p>
+        </section>
+        <section>
+          <h3>Trabalhos Recentes</h3>
+          <ul class="recents">
+            <li>
+              <a href="https://karolinedealencar.github.io/" target="_blank">
+                <img src="img/projeto-blogpessoal.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="http://www.pachiconsultant.com/" target="_blank">
+                <img src="img/projeto-pachi.png" alt="">
+              </a>
+
+            </li>
+            <li>
+              <a href="http://www.adenda.com.br" target="_blank">
+                <img src="img/projeto-adenda.png" alt="">
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </main>

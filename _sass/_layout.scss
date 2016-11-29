@@ -14,3 +14,14 @@
   }
 
 }
+
+.container__post {
+  @media (min-width: 992px) {
+    width: 920px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 980px;
+  }
+  
+}

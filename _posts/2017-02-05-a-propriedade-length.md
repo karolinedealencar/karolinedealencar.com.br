@@ -1,4 +1,7 @@
-# [Arrays]: A propriedade Length
+---
+layout: post
+title: [Arrays]: A propriedade Length
+---
 
 A propriedade length retorna o número de elementos de um array.
 Um dos usos mais comuns é para a iteração. Por exemplo:

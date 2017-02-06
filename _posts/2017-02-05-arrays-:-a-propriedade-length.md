@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Arrays]: A propriedade Length
+title: 
 ---
 
 A propriedade length retorna o número de elementos de um array.

@@ -4,7 +4,7 @@ title:  "Arrays: Os métodos Push e Pop"
 date:   2017-02-19 20:29:31 -0200
 categories: JS
 ---
-Os métodos push() e pop() são 'contrárias', pois enquanto uma adiciona items no fim do array, a outra remove. Vamos ver basicamente o conceito de cada uma:
+Os métodos push() e pop() são 'contrários', pois enquanto um adiciona items no fim do array, o outro remove. Vamos ver basicamente o conceito de cada um:
 
 ## push()
 

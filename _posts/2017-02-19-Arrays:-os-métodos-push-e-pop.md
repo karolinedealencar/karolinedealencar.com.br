@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Arrays]: Os métodos Push e Pop
+title: Arrays: Os métodos Push e Pop
 ---
 
 Os métodos push() e pop() são 'contrárias', pois enquanto uma adiciona items no fim do array, a outra remove. Vamos ver basicamente o conceito de cada uma:

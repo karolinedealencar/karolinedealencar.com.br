@@ -1,3 +1,12 @@
+
+// VARIABLES
+
+$color-primary: #F575A4;
+$color-secundary: #413C3E;
+$color-contrast: #FFF;
+
+// GLOBAL
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -15,37 +24,8 @@ html {
 }
 
 a {
-  text-decoration: none;
+  color: $color-secundary;
   font-weight: bold;
-  color: #623C63;
+  text-decoration: none;
   cursor: pointer;
-  transition: 1s;
-}
-
-a:hover {
-  color: #8D4B5E;
-}
-
-h2 {
-  font-size: 2.5em;
-  color: #623C63;
-  @media (min-width: 768px) {
-    font-size: 3.5em;
-  }
-}
-
-p {
-  font-size: 16px;
-  color: #2C302E;
-  line-height: 1.3em;
-  letter-spacing: 0.8px;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  font-size: 1.4em;
-  color: #2C302E;
 }

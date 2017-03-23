@@ -9,7 +9,7 @@ layout: default
   <article class="post__page">
       <h1 class="post__title">{{ page.title }}</h1>
       <div class="post__date post__date--mod">
-          <time>{{ page.date | date_to_string }}</time>
+          <time>{{ page.date | date: "%d/%m/%Y" }}</time>
           <span class="reading__time" title="Estimated read time"> - {{ minutesText }}</span>
       </div>
 

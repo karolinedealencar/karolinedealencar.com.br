@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Arrays: Array.fill()"
-date: 2017-03-14 07:55:31 -0200
+date: 2017-03-14 07:08:31 -0200
 categories: JavaScript
 ---
 

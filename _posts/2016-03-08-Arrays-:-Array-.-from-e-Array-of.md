@@ -1,3 +1,10 @@
+---
+layout: post
+title: Array.from() e Array.of()
+date: 2017-03-08 07:08:31 -0200
+categories: JavaScript
+---
+
 ## Array.from();
 
 O método Array.from(), introduzido no ECMAScript 2015, converte um array-like

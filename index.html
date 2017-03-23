@@ -24,7 +24,7 @@ layout: default
               {{ post.title }}
             </h3>
             <div class="post__date">
-              <time>{{ site.time | date_to_long_string }}</time>
+              <time>{{ post.date | date: "%d/%m/%Y" }}</time>
             </div>
           </a>
         </article>

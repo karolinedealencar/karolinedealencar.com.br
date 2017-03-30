@@ -8,7 +8,7 @@ categories: JavaScript
 
 ## Array.fill();
 
-Array.fill() é um método mutável (ou seja, modifica o objeto) que preenche um array com um valor estático baseando-se no índice inicial/final. Ele recebe três parâmetros:
+Array.fill() é um método **mutável (ou seja, modifica o array)** que preenche um array com um valor estático baseando-se no índice inicial/final. Ele recebe três parâmetros:
 
 
 **Value: O valor que irá preencher o array.**

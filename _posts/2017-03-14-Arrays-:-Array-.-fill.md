@@ -5,9 +5,6 @@ date: 2017-03-14 07:08:31 -0200
 categories: JavaScript
 ---
 
-
-## Array.fill();
-
 Array.fill() é um método **mutável (ou seja, modifica o array)** que preenche um array com um valor estático baseando-se no índice inicial/final. Ele recebe três parâmetros:
 
 

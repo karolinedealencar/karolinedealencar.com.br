@@ -2,8 +2,10 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Karoline Alencar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karoline Alencar</title>
+  <link rel="shortcut icon" href="favicon-cv.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-cv.ico" type="image/x-icon">
 </head>
 <style>
 
@@ -33,18 +35,19 @@
 
   a {
     text-decoration: none;
-    color: #000000;
-    font-size: 1.2em;
-    font-weight: bold;
+    color: #565654;
   }
 
   a:hover {
     color: #383738;
   }
 
+  a, p {
+    font-size: 1.2em;
+  }
+
   p {
     color: #383738;
-    font-size: 1em;
   }
 
   .container {
@@ -60,39 +63,24 @@
     font-size: 1em;
     cursor: pointer;
   }
+
   header p {
     color: #000000;
     font-weight: bold;
   }
 
   section {
-    margin-bottom: 40px;
+    margin-bottom: 2em;
   }
 
   ul {
     list-style: none;
   }
 
-  .exp-link {
-    text-decoration: underline;
-  }
-
-  .recents li {
+  li {
     margin-bottom: 10px;
     font-weight: lighter;
   }
-
-  img {
-		max-width: 160px;
-		margin: 12px;
-		-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-		filter: grayscale(100%);
-	}
-
-	img:hover {
-		-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-		filter: grayscale(0%);
-	}
 
   @media (max-width: 525px) {
 
@@ -101,12 +89,11 @@
     }
 
     ul {
+      flex-direction: column;
       padding-left: 8px;
     }
 
-    .recents {
-      flex-direction: column;
-    }
+
 
   }
 
@@ -126,19 +113,19 @@
         </div>
       </header>
       <div class="container">
-        <article>
-          <h3>Resumo</h3>
-          <p>
-            
-          </p>
-        </article>
+        <section>
+          <h3>Escolaridade</h3>
+          <ul>
+            <li>
+                4º Semestre de Análise e Desenvolvimento de Sistemas
+            </li>
+          </ul>
+        </section>
         <section>
           <h3>Experiência Profissional</h3>
           <ul>
             <li>
-              <a class="exp-link" href="https://www.lirix.com.br/" target="_blank">
                 Lirix | Desenvolvedor Front-end - Dezembro/2016
-              </a>
             </li>
             <!-- <li>
               <a class="exp-link" href="http://www.voleibauru.com.br/" target="_blank">
@@ -192,7 +179,7 @@
           <h3>Talks</h3>
           <ul>
             <li>
-              <a href="https://www.slideshare.net/KarolineAlencar/talk-sorocabacss-entendendo-box-model" target="_blank">
+              <a href="https://www.slideshare.net/KarolineAlencar/talk-sorocabacss-entendendo-box-model" title="Slides" target="_blank">
                 SorocabaCSS - Entendendo Box Model
               </a>
             </li>
@@ -200,37 +187,37 @@
         </section>
         <section>
           <h3>Cursos</h3>
-          <ul class="recents">
+          <ul>
             <li>
-              <a href="https://karolinedealencar.github.io/JS-drum-kit/" target="_blank">
                 JavaScript Ninja - Fernando Daciuck
-              </a>
             </li>
             <li>
-              <a href="https://thecssworkshop.com/" target="_blank">
                 CSS Workshop - Rachel Andrews
-              </a>
             </li>
             <li>
-              <a href="https://csshortcut.github.io/" target="_blank">
                 Organização de CSS - Afonso Pacifer
-              </a>
             </li>
             <li>
-              <a href="https://es6.io/" target="_blank">
                 ES6 for Everyone! - Wes Bos
-              </a>
             </li>
             <li>
-              <a href="https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=SEGUIDORFIEL" target="_blank">
                 SVG Do Início ao Avançado - Willian Justen
-              </a>
             </li>
           </ul>
         </section>
         <section>
           <h3>Projetos Recentes</h3>
-          <ul class="recents">
+          <ul>
+            <li>
+              <a href="https://karolinedealencar.github.io/webcam-fun/" target="_blank">
+                Fun with Webcam
+              </a>
+            </li>
+            <li>
+              <a href="https://karolinedealencar.github.io/speech-synthesis/" target="_blank">
+                Speech Synthesis
+              </a>
+            </li>
             <li>
               <a href="https://karolinedealencar.github.io/JS-drum-kit/" target="_blank">
                 JavaScript Drum Kit

@@ -65,6 +65,10 @@
     font-weight: bold;
   }
 
+  section {
+    margin-bottom: 40px;
+  }
+
   ul {
     list-style: none;
   }
@@ -73,9 +77,9 @@
     text-decoration: underline;
   }
 
-  .recents {
-    display: flex;
-    justify-content: space-around;
+  .recents li {
+    margin-bottom: 10px;
+    font-weight: lighter;
   }
 
   img {
@@ -115,7 +119,7 @@
           <h1>Karoline Alencar</h1>
           <h2>Porto Feliz, São Paulo</h2>
           <p>karolinedalencar@gmail.com</p>
-          <p>(15) 99624-8897</p>
+          <p>(15) 99844-7407</p>
           <a href="https://www.linkedin.com/in/karolinedealencar" target="_blank">Linkedin</a> |
           <a href="https://www.github.com/KarolinedeAlencar" target="_blank">GitHub</a> |
           <a href="https://karolinedealencar.github.io/" target="_blank">Blog</a>
@@ -125,15 +129,18 @@
         <article>
           <h3>Resumo</h3>
           <p>
-            Estudante, cursando o Primeiro Ano de Análise/Desenvolvimento de Sistemas,
-            apaixonada por tecnologias web, iniciei meus estudos focado em frontend
-            há pouco menos de um ano e desde então procuro novos desafios!
+            
           </p>
         </article>
         <section>
-          <h3>Experiência</h3>
+          <h3>Experiência Profissional</h3>
           <ul>
             <li>
+              <a class="exp-link" href="https://www.lirix.com.br/" target="_blank">
+                Lirix | Desenvolvedor Front-end - Dezembro/2016
+              </a>
+            </li>
+            <!-- <li>
               <a class="exp-link" href="http://www.voleibauru.com.br/" target="_blank">
                 Projeto Volley Bauru | Outubro/2016
               </a>
@@ -159,10 +166,10 @@
               <p>
                 Site institucional, feito em wordpress, usando bootstrap de forma semântica e Sass.
               </p>
-            </li>
+            </li> -->
           </ul>
         </section>
-        <section>
+        <!-- <section>
           <h3>Habilidades</h3>
           <p>
             Tenho noções de Photoshop, uso ele para extrair assets do layout.
@@ -180,24 +187,73 @@
             tempo de estudo é o SVG, além de ser mais leve que os outros formatos de imagens ele
             nos possibilita efeitos incríveis.
           </p>
+        </section> -->
+        <section>
+          <h3>Talks</h3>
+          <ul>
+            <li>
+              <a href="https://www.slideshare.net/KarolineAlencar/talk-sorocabacss-entendendo-box-model" target="_blank">
+                SorocabaCSS - Entendendo Box Model
+              </a>
+            </li>
+          </ul>
         </section>
         <section>
-          <h3>Trabalhos Recentes</h3>
+          <h3>Cursos</h3>
           <ul class="recents">
             <li>
-              <a href="https://karolinedealencar.github.io/" target="_blank">
-                <img src="img/projeto-blogpessoal.png" alt="">
+              <a href="https://karolinedealencar.github.io/JS-drum-kit/" target="_blank">
+                JavaScript Ninja - Fernando Daciuck
               </a>
             </li>
             <li>
-              <a href="http://www.pachiconsultant.com/" target="_blank">
-                <img src="img/projeto-pachi.png" alt="">
+              <a href="https://thecssworkshop.com/" target="_blank">
+                CSS Workshop - Rachel Andrews
               </a>
-
             </li>
             <li>
-              <a href="http://www.adenda.com.br" target="_blank">
-                <img src="img/projeto-adenda.png" alt="">
+              <a href="https://csshortcut.github.io/" target="_blank">
+                Organização de CSS - Afonso Pacifer
+              </a>
+            </li>
+            <li>
+              <a href="https://es6.io/" target="_blank">
+                ES6 for Everyone! - Wes Bos
+              </a>
+            </li>
+            <li>
+              <a href="https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=SEGUIDORFIEL" target="_blank">
+                SVG Do Início ao Avançado - Willian Justen
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Projetos Recentes</h3>
+          <ul class="recents">
+            <li>
+              <a href="https://karolinedealencar.github.io/JS-drum-kit/" target="_blank">
+                JavaScript Drum Kit
+              </a>
+            </li>
+            <li>
+              <a href="https://karolinedealencar.github.io/to-do-list/" target="_blank">
+                To-do List
+              </a>
+            </li>
+            <li>
+              <a href="https://karolinedealencar.github.io/flex-panels-gallery/" target="_blank">
+                CSS Panels Gallery
+              </a>
+            </li>
+            <li>
+              <a href="https://karolinedealencar.github.io/pokemon-by-habitat/" target="_blank">
+                Pokemon By Habitat
+              </a>
+            </li>
+            <li>
+              <a href="https://karolinedealencar.github.io/css-var-and-js/" target="_blank">
+                Update CSS Variables with JS
               </a>
             </li>
           </ul>

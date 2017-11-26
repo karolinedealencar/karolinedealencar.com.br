@@ -63,7 +63,7 @@
   text-align: center;
 
   @media (min-width: 992px) {
-    padding: 6em 0;
+    padding: 8em 0;
     text-align: left;
   }
 
@@ -189,10 +189,20 @@
 // FOOTER
 
 .footer {
-  height: 4px;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2em;
+  padding: .4em;
+
+  color: $color-contrast;
+  font-size: .6em;
+  text-align: center;
+
   background: linear-gradient(to right, #9178ED, #F485E4 60%);
+
+  @media (min-width: 992px) {
+    font-size: 1em;
+  }
+
 }
 
 // POST PAGE

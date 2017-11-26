@@ -1,8 +1,8 @@
 
 // VARIABLES
 
-$color-primary: #F575A4;
-$color-secundary: #413C3E;
+$color-primary: #9178ED;
+$color-secundary: #000;
 $color-contrast: #FFF;
 
 // GLOBAL
@@ -20,12 +20,14 @@ body {
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
-  color: #A8A8A8;
-  font-weight: bold;
+  color: inherit;
   text-decoration: none;
-  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }

@@ -26,7 +26,7 @@ Alguns exemplos:
 var animals = [
   {
     name: 'Cat',
-    color: 'Black'
+    color: '$color-secundary'
   },
   {
     name: 'Dog',
@@ -38,12 +38,12 @@ var animals = [
   },
   {
     name: 'Raven',
-    color: 'Black'
+    color: '$color-secundary'
   }
 ];
 
-var blackAnimals = animals.filter(function(animal) {
-  return animal.color == 'Black';
+var $color-secundaryAnimals = animals.filter(function(animal) {
+  return animal.color == '$color-secundary';
 })
 
 ```

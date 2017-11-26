@@ -12,11 +12,20 @@
 }
 
 .header__title {
+  flex: 20%;
+
   display: inline;
   margin: 0;
   color: #fff;
   font-size: 1.4em;
   font-weight: bold;
+
+  transition: .2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
 }
 
 .header__nav,
@@ -29,8 +38,17 @@
   padding-left: 5px;
   font-size: 1.2em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     padding-left: 10px;
+  }
+
+}
+
+.header__icon {
+  transition: .2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
   }
 
 }
@@ -39,19 +57,32 @@
 
 .about {
   width: 100%;
-  padding: 100px 0px;
+  padding: 4em 0;
+
   color: $color-secundary;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    padding: 6em 0;
+    text-align: left;
+  }
+
 }
 
 .about__img {
-  float: left;
-
   height: 140px;
   width: 140px;
-  margin-right: 1em;
+  margin: 1em auto;
   overflow: hidden;
 
   border-radius: 50%;
+
+  @media (min-width: 992px) {
+    float: left;
+    margin: 0;
+    margin-right: 1em;
+  }
+
 }
 
 .about__title {
@@ -61,7 +92,7 @@
   font-size: 2.4em;
   line-height: 1em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     margin: 10px 0;
     font-size: 4em;
   }
@@ -74,7 +105,7 @@
   color: $color-secundary;
   font-size: 1em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     font-size: 1.4em;
   }
 
@@ -86,14 +117,19 @@
   margin: 10px 0;
 
   color: $color-secundary;
-  font-size: 3em;
+  font-size: 2em;
+
+  @media (min-width: 992px) {
+    font-size: 2.6em;
+  }
+
 }
 
 .posts__list {
   margin:  0;
   margin-bottom: 6em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     margin:  0;
     margin-bottom: 6em;
   }
@@ -104,7 +140,7 @@
   color: $color-secundary;
   font-size: 2em;
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     font-size: 3em;
   }
 
@@ -119,8 +155,13 @@
   margin: 0;
 
   color: $color-secundary;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: bold;
+
+  @media (min-width: 992px) {
+    font-size: 2em;
+  }
+
 }
 
 .post__title--home {
@@ -143,6 +184,15 @@
   color: #3E4042;
   font-size: 0.9em;
   font-weight: lighter;
+}
+
+// FOOTER
+
+.footer {
+  height: 4px;
+  width: 100%;
+  margin-top: 1em;
+  background: linear-gradient(to right, #9178ED, #F485E4 60%);
 }
 
 // POST PAGE
@@ -170,7 +220,7 @@
     font-size: 1em;
     line-height: 1.6em;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       font-size: 1em;
     }
 

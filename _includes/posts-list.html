@@ -1,15 +1,3 @@
----
-layout: default
----
-<section class="about">
-  <div class="about__img">
-    <img src="https://karolinedealencar.github.io/img/selfie.jpg" alt="Karoline Alencar Picture">
-  </div>
-  <h1 class="about__title">Karoline Alencar</h1>
-  <p class="about__p">
-      Desenvolvedora Web.
-  </p>
-</section>
 <section class="posts__list">
   <h2 class="posts__title">
     Posts
@@ -21,19 +9,29 @@ layout: default
     {% else %}
       {% for post in paginator.posts %}
         <article class="posts__post">
-          <div class="post__date">
-            <time>{{ post.date | date: "%d/%m/%Y" }}</time>
+          <div class="posts__post__img">
+            <div class="logo__img">
+              <img src="https://image.flaticon.com/icons/svg/136/136448.svg" alt="">
+            </div>
           </div>
-          <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
-            <h3 class="post__title post__title--home">
-              {{ post.title }}
-            </h3>
-          </a>
+          <div class="posts__post__content">
+            <div class="post__date">
+              <time>{{ post.date | date: "%d/%m/%Y" }}</time>
+            </div>
+            <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
+              <h3 class="post__title post__title--home">
+                {{ post.title }}
+              </h3>
+            </a>
+          </div>
         </article>
       {% endfor %}
     {% endif %}
   </div>
 </section>
+
+
+
 <!-- Pagination links -->
 <div class="pagination">
 {% if paginator.previous_page %}
@@ -49,4 +47,3 @@ layout: default
   {% else %}
 {% endif %}
 </div>
-

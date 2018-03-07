@@ -1,6 +1,13 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
 .container {
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 0 1rem;
+
   @media (min-width: 991px) {
     width: 750px;
   }

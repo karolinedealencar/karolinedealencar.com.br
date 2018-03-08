@@ -1,49 +1,65 @@
-<section class="posts__list">
-  <h2 class="posts__title">
-    Posts
-  </h2>
-  <div class="posts__container">
-    <!-- Loops through the paginated posts -->
-    {% if site.posts.size == 0 %}
-      <h3>I'm sorry, the post is in another castle. =(</h3>
-    {% else %}
-      {% for post in paginator.posts %}
-        <article class="posts__post">
-          <div class="posts__post__img">
-            <div class="logo__img">
-              <img src="https://image.flaticon.com/icons/svg/136/136448.svg" alt="">
-            </div>
-          </div>
-          <div class="posts__post__content">
-            <div class="post__date">
-              <time>{{ post.date | date: "%d/%m/%Y" }}</time>
-            </div>
-            <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
-              <h3 class="post__title post__title--home">
+<section class="post-list">
+  <div class="container">
+    <h2 class="post-list__title">
+      Artigos
+    </h2>
+    <div class="post-list__list">
+      <!-- Loops through the paginated posts -->
+      {% if site.posts.size == 0 %}
+        <h3>Parece que não tem nenhum post por aqui.</h3>
+      {% else %}
+        {% for post in paginator.posts %}
+        <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
+          <article class="post-list__item">
+            <div class="post-list__img">
+                {% if post.categories contains "JavaScript" %}
+                  <img src="img/icon-javascript.svg" alt="JavaScript Icon">
+                {% endif %}
+                {% if post.categories contains "CSS" %}
+                  <img src="img/icon-css.svg" alt="CSS Icon">
+                {% endif %}
+                {% if post.categories contains "HTML" %}
+                  <img src="img/icon-html.svg" alt="HTML Icon">
+                {% endif %}
+
+                {% if post.categories contains "Dicas" %}
+                  <img src="img/icon-tips.svg" alt="Tips Icon">
+                {% endif %}
+                {% if post.categories contains "Desenvolvimento" %}
+                  <img src="img/icon-development.svg" alt="Development Icon">
+                {% endif %}
+                {% if post.categories contains "Soft Skills" %}
+                  <img src="img/icon-skills.svg" alt="Soft Skills Icon">
+                {% endif %}        
+              </div>
+            <header class="post-list__header">
+              <div>
+                <time class="post-list__date">{{ post.date | date: "%d/%m/%Y" }}</time>
+                <span class="post-list__categories"> - {{ post.categories }}</span>
+              </div>
+              <h3 class="post-list__title--list">
                 {{ post.title }}
               </h3>
-            </a>
-          </div>
-        </article>
-      {% endfor %}
-    {% endif %}
+            </header>
+          </article>
+        </a>
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
-</section>
-
-
-
-<!-- Pagination links -->
-<div class="pagination">
-{% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">
-    < Anterior
-  </a>
-{% else %}
-{% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">
-      Próximo >
+  <!-- Pagination links -->
+  <div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="previous" href="{{ paginator.previous_page_path }}">
+      < Anterior
     </a>
   {% else %}
-{% endif %}
-</div>
+  {% endif %}
+    {% if paginator.next_page %}
+      <a class="next" href="{{ paginator.next_page_path }}">
+        Próximo >
+      </a>
+    {% else %}
+  {% endif %}
+  </div>    
+</section>

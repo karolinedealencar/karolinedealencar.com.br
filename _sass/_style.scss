@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: .6rem;
   color: #fff;
 }
 
@@ -33,13 +34,13 @@
 
 .header__list {
   display: flex;
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
 .header__item {
   padding-left: 1rem;
-  font-size: 1.2em;
 }
 
 .header__icon {
@@ -72,8 +73,8 @@
   margin: 0;
 
   color: $color-secundary;
-  font-size: 2.4em;
-  line-height: 1em;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
 
   @media (min-width: 992px) {
     font-size: 4rem;
@@ -85,21 +86,21 @@
   margin: 0;
 
   color: $color-secundary;
-  font-size: 1em;
+  font-size: 1rem;
 
   @media (min-width: 992px) {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
 }
 
-// POSTS
+// POSTS 
 
-.posts__title {
-  margin: 10px 0;
+.post-list__title {
+  margin-bottom: 2rem;
 
   color: $color-secundary;
-  font-size: 2em;
+  font-size: 2rem;
 
   @media (min-width: 992px) {
     font-size: 2.6em;
@@ -107,113 +108,81 @@
 
 }
 
-.posts__list {
-  margin:  0;
-  margin-bottom: 6em;
+.post-list__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
 
-  @media (min-width: 992px) {
-    margin:  0;
-    margin-bottom: 6em;
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
 
-.post__h {
-  color: $color-secundary;
-  font-size: 2em;
+.post-list__item {
+  height: 280px;
+  box-shadow: 0px 0px 1px 1px #d2cece;
 
-  @media (min-width: 992px) {
-    font-size: 3em;
-  }
-
-}
-
-.posts__post {
-  margin: 40px 20px 20px 20px;
-  border-bottom: 2px solid #9178ED;
-}
-
-.post__title {
-  margin: 0;
-
-  color: $color-secundary;
-  font-size: 1.4em;
-  font-weight: bold;
-
-  @media (min-width: 992px) {
-    font-size: 2em;
-  }
-
-}
-
-.post__title--home {
-  font-weight: 400;
+  transition: .2s ease-in;
 
   &:hover {
-    background: linear-gradient(to right, #9178ED, #F485E4 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transform: translateY(-2px);
   }
 
 }
 
-.post__link {
-  display: block;
-  padding: 0px 0px 25px 0px;
+.post-list__img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.post__date {
-  color: #3E4042;
-  font-size: 0.9em;
+.post-list__date,
+.post-list__categories {
+  font-size: .8rem;
   font-weight: lighter;
 }
 
-// FOOTER
+.post-list__categories {
+  font-weight: bold;
+}
 
-.footer {
-  width: 100%;
-  margin-top: 2em;
-  padding: .4em;
+.post-list__header {
+  padding: 1rem;
+}
 
-  color: $color-contrast;
-  font-size: .6em;
-  text-align: center;
-
-  background: linear-gradient(to right, #9178ED, #F485E4 60%);
-
-  @media (min-width: 992px) {
-    font-size: 1em;
-  }
-
+.post-list__title--list {
+  margin: .2rem 0 0 0;
+  font-size: 1.4rem;
 }
 
 // POST PAGE
 
 .post__page {
-  margin: 100px 0;
-
-  .post__title {
-    font-size: 2.6em;
-    font-weight: bold;
-  }
+  margin: 4rem 0;
 
   h2 {
     color: $color-secundary;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: lighter;
   }
 
   h3 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: lighter;
   }
 
   p {
-    font-size: 1em;
-    line-height: 1.6em;
+    font-size: 1rem;
+    line-height: 1.6rem;
 
     @media (min-width: 992px) {
-      font-size: 1em;
+      font-size: 1rem;
     }
 
   }
@@ -221,18 +190,58 @@
 }
 
 .post__content {
-  margin-top: 4em;
+  margin-top: 2rem;
 }
+
+.post__title {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+
+  @media (min-width: 600px) {
+    font-size: 2.6rem;
+  }
+
+}
+
+.post__date,
+.post__categories {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.post__categories {
+  font-weight: bold;
+}
+
 
 // PAGINATION
 
 .pagination {
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
+  justify-content: center;
+  padding: 4rem 1rem 0 1rem;
 
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: bold;
+}
+
+.next {
+  margin-left: 1rem;
+}
+
+// FOOTER
+
+.footer {
+  width: 100%;
+  margin-top: 2rem;
+  padding: .4rem;
+
+  color: $color-contrast;
+  font-size: 1rem;
+  text-align: center;
+
+  background-color: #9178ED;
 }
 
 // HIGHLIGHTING
@@ -240,11 +249,11 @@
 pre {
   white-space: pre-wrap;
   color: #000;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 //  COMMENTS
 
 .comments__h {
-  font-size: 1.5em;
+  font-size: 2rem;
 }

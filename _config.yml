@@ -14,7 +14,7 @@ url: "http://karolinedealencar.github.io" # the base hostname & protocol for you
 twitter_username: karoldalencar
 github_username:  KarolinedeAlencar
 plugins: [jekyll-paginate]
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page:num/"
 
 # Build settings

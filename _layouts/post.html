@@ -2,15 +2,18 @@
 layout: default
 ---
 
-<div class="container">
+<main class="container">
   <article class="post__page">
-      <div class="post__date post__date--mod">
-          <time>{{ page.date | date: "%d/%m/%Y" }}</time>
-      </div>
-      <h1 class="post__title post__title--page">{{ page.title }}</h1>
+      <header>
+        <div>
+            <time class="post__date">{{ page.date | date: "%d/%m/%Y" }}</time>
+            <span class="post__categories"> - {{ page.categories }} </span>
+        </div>
+        <h1 class="post__title">{{ page.title }}</h1>
+      </header>
       <div class="post__content">
         {{ content }}
       </div>
   </article>
   {% include comments.html %}
-</div>
+</main>

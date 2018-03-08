@@ -2,43 +2,5 @@
 layout: default
 ---
 {% include about.html %}
-<section class="posts__list">
-  <h2 class="posts__title">
-    Posts
-  </h2>
-  <div class="posts__container">
-    <!-- Loops through the paginated posts -->
-    {% if site.posts.size == 0 %}
-      <h3>I'm sorry, the post is in another castle. =(</h3>
-    {% else %}
-      {% for post in paginator.posts %}
-        <article class="posts__post">
-          <div class="post__date">
-            <time>{{ post.date | date: "%d/%m/%Y" }}</time>
-          </div>
-          <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
-            <h3 class="post__title post__title--home">
-              {{ post.title }}
-            </h3>
-          </a>
-        </article>
-      {% endfor %}
-    {% endif %}
-  </div>
-</section>
-<!-- Pagination links -->
-<div class="pagination">
-{% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">
-    < Anterior
-  </a>
-{% else %}
-{% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">
-      Próximo >
-    </a>
-  {% else %}
-{% endif %}
-</div>
+{% include posts-list.html %}
 

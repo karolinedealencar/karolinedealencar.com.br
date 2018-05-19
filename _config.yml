@@ -10,7 +10,7 @@ title: Karoline de Alencar
 email: karolinedalencar@gmail.com
 description: "Blog sobre desenvolvimento web."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://karolinedealencar.github.io" # the base hostname & protocol for your site
+url: "http://karolinedealencar.com.br" # the base hostname & protocol for your site
 twitter_username: karoldalencar
 github_username:  KarolinedeAlencar
 plugins: [jekyll-paginate]

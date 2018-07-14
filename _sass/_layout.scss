@@ -1,7 +1,8 @@
 .grid-container {
+  min-height: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 .container {

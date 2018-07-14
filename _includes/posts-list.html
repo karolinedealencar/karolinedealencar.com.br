@@ -12,31 +12,31 @@
         {% for post in paginator.posts %}
           <article class="post-list__article">
             <div class="post-list__img">
-                {% if post.categories contains "JavaScript" %}
+                {% if post.tags contains "JavaScript" %}
                   <img src="/img/icon-javascript.svg" alt="JavaScript Icon">
                 {% endif %}
-                {% if post.categories contains "CSS" %}
+                {% if post.tags contains "CSS" %}
                   <img src="/img/icon-css.svg" alt="CSS Icon">
                 {% endif %}
-                {% if post.categories contains "HTML" %}
+                {% if post.tags contains "HTML" %}
                   <img src="/img/icon-html.svg" alt="HTML Icon">
                 {% endif %}
 
-                {% if post.categories contains "Dicas" %}
+                {% if post.tags contains "Dicas" %}
                   <img src="/img/icon-tips.svg" alt="Tips Icon">
                 {% endif %}
-                {% if post.categories contains "Desenvolvimento" %}
+                {% if post.tags contains "Desenvolvimento" %}
                   <img src="/img/icon-development.svg" alt="Development Icon">
                 {% endif %}
-                {% if post.categories contains "Soft Skills" %}
+                {% if post.tags contains "Soft Skills" %}
                   <img src="/img/icon-skills.svg" alt="Soft Skills Icon">
                 {% endif %}        
             </div>
             <header class="post-list__header">
               <div>
                 <time class="post-list__date">{{ post.date | date: "%d/%m/%Y" }}</time>
-                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.categories }}">
-                  <span class="post-list__categories"> #{{ post.categories }}</span>
+                <a href="/tags/{{ post.tags }}" title="{{ post.categories }}">
+                  <span class="post-list__categories"> #{{ post.tags }}</span>
                 </a>
               </div>
               <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">

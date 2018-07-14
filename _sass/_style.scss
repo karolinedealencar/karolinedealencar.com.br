@@ -56,7 +56,7 @@
 
 .about {
   width: 100%;
-  color: $color-secundary;
+  color: $color-secondary;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@
 .about__title {
   margin: 0;
 
-  color: $color-secundary;
+  color: $color-secondary;
   font-size: 2.4rem;
   line-height: 2.6rem;
 
@@ -86,7 +86,7 @@
 .about__p {
   margin: 0;
 
-  color: $color-secundary;
+  color: $color-secondary;
   font-size: 1rem;
 
   @media (min-width: 992px) {
@@ -100,7 +100,7 @@
 .post-list__title {
   margin-bottom: 2rem;
 
-  color: $color-secundary;
+  color: $color-secondary;
   font-size: 2rem;
 
   @media (min-width: 992px) {
@@ -169,7 +169,7 @@
   margin: 4rem 0;
 
   h2 {
-    color: $color-secundary;
+    color: $color-secondary;
     font-size: 1.6rem;
     font-weight: lighter;
   }

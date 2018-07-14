@@ -27,11 +27,39 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+// TEXT
+
 a {
   color: inherit;
+  font-weight: bold;
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
+
+h2 {
+  color: $color-secondary;
+  font-size: rem(34);
+  font-weight: bold;
+}
+
+h3 {
+  color: $color-secondary;
+  font-size: rem(24);
+  font-weight: bold;
+}
+
+p {
+  color: $color-secondary;
+  font-size: rem(16);
+  line-height: rem(26);
+
+  @media (min-width: 992px) {
+    font-size: rem(18);
+    line-height: rem(28);
+  }
+
 }

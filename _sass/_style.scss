@@ -25,6 +25,7 @@
   transition: baseTransition();
 
   &:hover {
+    text-decoration: none;
     transform: baseTranslate();
   }
 
@@ -225,28 +226,6 @@
 
 .post__page {
   margin: rem(40) 0;
-
-  h2 {
-    color: $color-secondary;
-    font-size: rem(24);
-    font-weight: lighter;
-  }
-
-  h3 {
-    font-size: rem(20);
-    font-weight: lighter;
-  }
-
-  p {
-    font-size: rem(16);
-    line-height: 1.6rem;
-
-    @media (min-width: 992px) {
-      font-size: rem(18);
-    }
-
-  }
-
 }
 
 .page-intro__title--post {
@@ -262,9 +241,20 @@
 
 }
 
-.post__content {
+.content {
   width: 88%;
   margin: rem(40) auto 0 auto;
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    transition: baseTransition();
+
+    &:hover {
+      text-decoration: line-through;
+    }
+
+   }
 }
 
 .post__date,

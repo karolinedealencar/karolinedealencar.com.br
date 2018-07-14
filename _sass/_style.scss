@@ -363,14 +363,24 @@
 
 .footer {
   width: 100%;
-  margin-top: 2rem;
-  padding: .4rem;
+  margin-top: rem(100);
+  padding: rem(14);
 
   color: $color-contrast;
-  font-size: 1rem;
+  font-size: rem(16);
   text-align: center;
 
   background-color: #9178ED;
+}
+
+.footer__link {
+  display: block;
+  transition: baseTransition();
+
+  &:hover {
+    transform: baseTranslate();
+  }
+
 }
 
 // HIGHLIGHTING

@@ -3,51 +3,63 @@
 .header {
   width: 100%;
   background-color: #9178ED;
+  background-image: url("../img/background-header.png")
 }
 
-.header__content {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .6rem;
+  padding: rem(20) 0;
   color: #fff;
 }
 
-.header__title {
+.nav__title {
   margin: 0;
 
   color: #fff;
-  font-size: 1.2rem;
+  font-size: rem(18);
   font-weight: bold;
 
-  transition: .2s ease-in-out;
+  transition: baseTransition();
 
   &:hover {
-    transform: translateY(-2px);
+    transform: baseTranslate();
   }
 
   @media (min-width: 900px) {
     flex: 20%;
   }
 
+  @media (min-width: 600px) {
+    font-size: rem(28);
+  }
+
 }
 
-.header__list {
+.nav__list {
   display: flex;
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.header__item {
-  padding-left: 1rem;
-}
+.nav__item {
+  padding-left: rem(10);
 
-.header__icon {
-  transition: .2s ease-in-out;
+  color: #fff;
+  font-size: rem(14);
+  font-weight: bold;
+
+  transition: baseTransition();
 
   &:hover {
-    transform: translateY(-4px);
+    transform: baseTranslate();
+  }
+
+  @media (min-width: 600px) {
+    padding-left: rem(16);
+    font-size: rem(22);
   }
 
 }

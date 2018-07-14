@@ -4,13 +4,6 @@ layout: default
 
 <main class="container">
   <article class="post__page">
-      <header>
-        <div>
-            <time class="post__date">{{ page.date | date: "%d/%m/%Y" }}</time>
-            <span class="post__categories"> - {{ page.categories }} </span>
-        </div>
-        <h1 class="post__title">{{ page.title }}</h1>
-      </header>
       <div class="post__content">
         {{ content }}
       </div>

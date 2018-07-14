@@ -224,53 +224,62 @@
 // POST PAGE
 
 .post__page {
-  margin: 4rem 0;
+  margin: rem(40) 0;
 
   h2 {
     color: $color-secondary;
-    font-size: 1.6rem;
+    font-size: rem(24);
     font-weight: lighter;
   }
 
   h3 {
-    font-size: 1.4rem;
+    font-size: rem(20);
     font-weight: lighter;
   }
 
   p {
-    font-size: 1rem;
+    font-size: rem(16);
     line-height: 1.6rem;
 
     @media (min-width: 992px) {
-      font-size: 1rem;
+      font-size: rem(18);
     }
 
   }
 
 }
 
-.post__content {
-  margin-top: 2rem;
-}
+.page-intro__title--post {
+  font-size: rem(28);
 
-.post__title {
-  margin-top: 0;
-  font-size: 2rem;
-  font-weight: bold;
+  @media (min-width: 600px) and (max-width: 889px) {
+    font-size: rem(30);
+  }
 
-  @media (min-width: 600px) {
-    font-size: 2.6rem;
+  @media (min-width: 900px) {
+    font-size: rem(50);
   }
 
 }
 
-.post__date,
-.post__categories {
-  font-size: 1rem;
-  font-weight: lighter;
+.post__content {
+  width: 88%;
+  margin: rem(40) auto 0 auto;
 }
 
-.post__categories {
+.post__date,
+.post__tag {
+  color: $color-contrast;
+  font-size: rem(16);
+  font-weight: lighter;
+
+  @media (min-width: 900px) {
+    font-size: rem(20);
+  }
+
+}
+
+.post__tag {
   font-weight: bold;
 }
 
@@ -385,5 +394,11 @@ pre {
 //  COMMENTS
 
 .comments__h {
-  font-size: 2rem;
+  margin-top: rem(100);
+  font-size: rem(24);
+
+  @media (min-width: 900px) {
+    font-size: rem(28);
+  }
+
 }

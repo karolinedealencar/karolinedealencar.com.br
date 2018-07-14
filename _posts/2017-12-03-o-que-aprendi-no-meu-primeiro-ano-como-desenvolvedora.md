@@ -5,6 +5,7 @@ date: 2017-12-03 8:30:31 -0200
 tags: desenvolvimento
 ---
 
+
 Tudo começou em 2016, quando me interessei por front-end. Lembro que foi tudo à primeira vista: amor, ódio, ansiedade, medo, curiosidade.
 
 Olhei para aquele monte de conteúdo e pensei “Como vou estudar tudo isso? E como vou conseguir entender tudo isso?”, a cada tentativa, cada experiência tudo isso vinha a tona. Não imaginava que algum dia iria conseguir de fato, trabalhar com isso.

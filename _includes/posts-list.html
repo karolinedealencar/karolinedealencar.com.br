@@ -3,14 +3,14 @@
     <h2 class="post-list__title">
       Artigos
     </h2>
+
     <div class="post-list__list">
       <!-- Loops through the paginated posts -->
       {% if site.posts.size == 0 %}
         <h3>Parece que não tem nenhum post por aqui.</h3>
       {% else %}
         {% for post in paginator.posts %}
-        <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
-          <article class="post-list__item">
+          <article class="post-list__article">
             <div class="post-list__img">
                 {% if post.categories contains "JavaScript" %}
                   <img src="/img/icon-javascript.svg" alt="JavaScript Icon">
@@ -31,22 +31,26 @@
                 {% if post.categories contains "Soft Skills" %}
                   <img src="/img/icon-skills.svg" alt="Soft Skills Icon">
                 {% endif %}        
-              </div>
+            </div>
             <header class="post-list__header">
               <div>
                 <time class="post-list__date">{{ post.date | date: "%d/%m/%Y" }}</time>
-                <span class="post-list__categories"> - {{ post.categories }}</span>
+                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.categories }}">
+                  <span class="post-list__categories"> #{{ post.categories }}</span>
+                </a>
               </div>
-              <h3 class="post-list__title--list">
-                {{ post.title }}
-              </h3>
+              <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+                <h3 class="post-list__title--list">
+                  {{ post.title }}
+                </h3>
+              </a>
             </header>
           </article>
-        </a>
         {% endfor %}
       {% endif %}
     </div>
   </div>
+
   <!-- Pagination links -->
   <div class="pagination">
   {% if paginator.previous_page %}

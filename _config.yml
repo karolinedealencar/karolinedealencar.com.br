@@ -15,7 +15,7 @@ twitter_username: karoldalencar
 github_username:  KarolinedeAlencar
 plugins: [jekyll-paginate]
 paginate: 6
-paginate_path: "/blog/page:num/"
+paginate_path: "pagina/:num/"
 
 # Build settings
 markdown: kramdown

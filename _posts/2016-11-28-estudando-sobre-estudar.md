@@ -2,7 +2,7 @@
 layout: post
 title: Estudando sobre estudar
 date: 2016-11-29 07:08:31 -0200
-tags: Dicas
+tags: dicas
 ---
 
 

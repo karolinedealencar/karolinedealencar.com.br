@@ -2,7 +2,7 @@
 layout: post
 title: Array.from() e Array.of()
 date: 2017-03-08 07:08:31 -0200
-tags: JavaScript
+tags: javascript
 ---
 
 ## Array.from();

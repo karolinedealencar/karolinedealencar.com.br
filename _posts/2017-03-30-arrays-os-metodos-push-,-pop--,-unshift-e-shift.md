@@ -2,7 +2,7 @@
 layout: post
 title:  "Arrays: Os métodos push(), pop(), unshift() e shift()"
 date:   2017-03-30 07:30:31 -0200
-tags: JavaScript
+tags: javascript
 ---
 
 Os métodos **mutáveis (ou seja, modificam o array)** push(), pop(), unshift() e shift() adicionam ou removem itens no início/final de um array. Vamos ver basicamente o conceito de cada um:

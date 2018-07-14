@@ -2,7 +2,7 @@
 layout: post
 title:  "Arrays: Array.filter()"
 date:   2017-05-18 07:34:31 -0200
-tags: JavaScript
+tags: javascript
 ---
 
 O método array.filter() cria um novo array com os elementos que passaram no teste (retornaram true/truthy) da função fornecida. Os parâmetros são:

@@ -2,7 +2,7 @@
 layout: post
 title: O que aprendi no meu primeiro ano como desenvolvedora
 date: 2017-12-03 8:30:31 -0200
-tags: Desenvolvimento
+tags: desenvolvimento
 ---
 
 Tudo começou em 2016, quando me interessei por front-end. Lembro que foi tudo à primeira vista: amor, ódio, ansiedade, medo, curiosidade.

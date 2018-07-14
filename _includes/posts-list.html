@@ -35,7 +35,7 @@
             <header class="post-list__header">
               <div>
                 <time class="post-list__date">{{ post.date | date: "%d/%m/%Y" }}</time>
-                <a href="/tags/{{ post.tags }}" title="{{ post.categories }}">
+                <a href="/tags/#{{ post.tags }}" title="{{ post.categories }}">
                   <span class="post-list__categories"> #{{ post.tags }}</span>
                 </a>
               </div>

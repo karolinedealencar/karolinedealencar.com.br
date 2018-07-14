@@ -82,16 +82,13 @@
   color: $color-contrast;
   font-size: rem(38);
   font-weight: bold;
-  line-height: rem(30);
 
   @media (min-width: 600px) and (max-width: 889px) {
     font-size: rem(60);
-    line-height: rem(50);
   }
 
   @media (min-width: 900px) {
     font-size: rem(100);
-    line-height: rem(90);
   }
 
 }

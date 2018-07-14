@@ -1,0 +1,11 @@
+@function rem($pixels) {
+    @return #{$pixels / 16}rem;
+}
+
+@function baseTranslate() {
+    @return translateY(-2px);
+}
+
+@function baseTransition() {
+    @return .2s ease-in-out;
+}

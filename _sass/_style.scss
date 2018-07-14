@@ -349,14 +349,69 @@
 .pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 4rem 1rem 0 1rem;
 
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.next {
-  margin-left: 1rem;
+.pagination__page-number {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: rem(5);
+  margin-right: rem(5);
+
+  color: $color-secondary;
+  font-size: rem(14);
+
+  border: 1px solid $color-secondary;
+
+  @media (min-width: 520px) {
+    height: 35px;
+    width: 35px;
+    font-size: rem(18);
+  }
+
+}
+
+a.pagination__page-number {
+  transition: baseTransition();
+
+  &:hover {
+    transform: baseTranslate();
+  }
+
+}
+
+.pagination__page-number--active {
+  color: $color-primary;
+  border-color: $color-primary;
+}
+
+.pagination__control {
+  height: 20px;
+  width: 20px;
+  margin: 0 rem(10);
+
+  @media (min-width: 520px) {
+    height: 25px;
+    width: 25px;
+  }
+
+}
+
+.pagination__svg {
+  fill: $color-secondary;
+  transition: baseTransition();
+
+  &:hover {
+    fill: $color-primary;
+  }
+
 }
 
 // FOOTER

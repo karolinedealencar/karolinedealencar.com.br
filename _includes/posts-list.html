@@ -50,20 +50,5 @@
       {% endif %}
     </div>
   </div>
-
-  <!-- Pagination links -->
-  <div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="previous" href="{{ paginator.previous_page_path }}">
-      < Anterior
-    </a>
-  {% else %}
-  {% endif %}
-    {% if paginator.next_page %}
-      <a class="next" href="{{ paginator.next_page_path }}">
-        Próximo >
-      </a>
-    {% else %}
-  {% endif %}
-  </div>    
+  {% include pagination.html %}
 </section>

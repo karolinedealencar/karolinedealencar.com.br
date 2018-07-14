@@ -142,49 +142,6 @@
 
 }
 
-//  ABOUT
-
-.about {
-  width: 100%;
-  color: $color-secondary;
-  text-align: center;
-}
-
-.about__img {
-  height: 200px;
-  width: 200px;
-  margin: 1rem auto;
-  overflow: hidden;
-
-  border-radius: 50%;
-}
-
-.about__title {
-  margin: 0;
-
-  color: $color-secondary;
-  font-size: 2.4rem;
-  line-height: 2.6rem;
-
-  @media (min-width: 992px) {
-    font-size: 4rem;
-    line-height: 4.2rem;
-  }
-
-}
-
-.about__p {
-  margin: 0;
-
-  color: $color-secondary;
-  font-size: 1rem;
-
-  @media (min-width: 992px) {
-    font-size: 1.4rem;
-  }
-
-}
-
 // POSTS 
 
 .post-list__title {
